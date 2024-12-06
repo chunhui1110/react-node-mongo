@@ -23,7 +23,7 @@ mongoose
 .catch( (err) => {console.log(err)} );
 
 app.use(express.json());
-app.use(cor());
+app.use(cors());
 
 app.use("/user", require("./routers/user.js"));
 
